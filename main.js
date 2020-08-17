@@ -1,8 +1,9 @@
-let songName = document.getElementById("song-name")
-document.getElementById("search-btn").addEventListener('click',serachResult)
+let songName = document.getElementById("song-name");
+document.getElementById("search-btn").addEventListener('click',serachResult);
 
 // load search result
 function serachResult(){
+    document.getElementById("lyrics").style.display = "none"
     fetch(`https://api.lyrics.ovh/suggest/${songName.value}`)
     .then(res => res.json())
     .then(data =>{
