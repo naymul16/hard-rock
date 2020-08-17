@@ -1,5 +1,5 @@
-let songName = document.getElementById("song-name")
-document.getElementById("search-btn").addEventListener('click',serachResult)
+let songName = document.getElementById("song-name");
+document.getElementById("search-btn").addEventListener('click',serachResult);
 
 // load search result
 function serachResult(){
